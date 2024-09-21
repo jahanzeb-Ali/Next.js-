@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #232029, #231e2d);
+  color: #ddd8e4;
+  position: relative;
+}
+
+main {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+main img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  filter: drop-shadow(0 0 4px #f6c363);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 3rem auto;
+  color: #ede9f3;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+p a {
+  color: #f4c33d;
+  text-decoration: none;
+  padding-bottom: 0.05rem;
+  border-bottom: 2px solid #f4c33d;
+}
+
+p a:hover,
+p a:active {
+  color: #bd3df4;
+  border-color: #bd3df4;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position:fixed;
+  top: 0;
+  background-color: #bd3df4;
+
+  width: 100%;
+}
+.navbar div{
+  display: flex;
+  align-items: center;
+}
+.navbar a{
+  text-decoration: none;
+  color:white;
+  font-size: bold;
+  padding-right: 10px;
+  transition: all 0.2s;
+}
+.navbar div a
+{
+font-size: 24px;
+font-weight: bolder;
+position: relative;
+}
+.navbar div a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 0px;
+  background-color: #f4c33d;
+  width:0;
+  transition: all 0.3s;
+}
+.navbar div a:hover::before{
+    width: 100%;
+}
+.navbar-list a:hover{
+  color: #f4c33d;
+  text-decoration:underline ;
+}
+.navbar-list{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+
+}
