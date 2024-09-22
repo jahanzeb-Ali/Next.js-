@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 
-import logoImg from "@/assests/icons/icon.png"
+import logoImg from "@/assets/icons/icon.png"
 import classes from "./MainHeader.module.css"
 export default function Header(){
     return(
